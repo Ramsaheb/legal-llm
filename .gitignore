@@ -1,0 +1,83 @@
+# =============================================
+#  Legal LLM — .gitignore
+# =============================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ---- Environment & Secrets ----
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Node / React ----
+node_modules/
+frontend/node_modules/
+frontend/build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.iml
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# ---- Model Artifacts (large files) ----
+backend/model_artifacts/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# ---- Data & Embeddings (generated) ----
+backend/data/embeddings/
+backend/data/logs/
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Misc ----
+*.bak
+*.tmp
+*.temp
+.cache/
